@@ -23,10 +23,11 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="font-size:16px;">ADMINISTRADOR<span class="sr-only"></span></a>
+                    <a class="nav-link" href="main.html" style="font-size:16px;">Home<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="font-size:16px;">Criar Usuário<span class="sr-only"></span></a>
+                    <a class="nav-link" href alp-link="./users/registerNewUser.html" alp-destino=".pagina"
+                        style="font-size:16px;">Criar Usuário<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -34,14 +35,20 @@
                         Cadastro Padrão
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <!-- <a class="dropdown-item" href="./register/registerWlan.html">WLAN'S</a> -->
-                        <a class="dropdown-item" href="register/registerWlan.html">WLAN'S</a>
-                        <a class="dropdown-item" href="./register/registerSetores.html">Setores</a>
-                        <a class="dropdown-item" href="./register/registerModelMaquinas.html">Modelos de Máquinas</a>
-                        <a class="dropdown-item" href="./register/registerTipoMaquinas.html">Tipo de Máquinas</a>
-                        <a class="dropdown-item" href="./register/registerSO.html">Sistemas Operacionais</a>
-                        <a class="dropdown-item" href="./register/registerModelMsoffice.html">Modelos MS Office</a>
-                        <a class="dropdown-item" href="./register/registerModelRamal.html">Modelos Ramais</a>
+                        <a class="dropdown-item" href alp-link="./registerStandard/registerWlan.html"
+                            alp-destino=".pagina">WLAN'S</a>
+                        <a class="dropdown-item" href alp-link="./registerStandard/registerSetores.html"
+                            alp-destino=".pagina">Setores</a>
+                        <a class="dropdown-item" href alp-link="./registerStandard/registerModelMaquinas.html"
+                            alp-destino=".pagina">Modelos de Máquinas</a>
+                        <a class="dropdown-item" href alp-link="./registerStandard/registerTipoMaquinas.html"
+                            alp-destino=".pagina">Tipo de Máquinas</a>
+                        <a class="dropdown-item" href alp-link="./registerStandard/registerSO.html"
+                            alp-destino=".pagina">Sistemas Operacionais</a>
+                        <a class="dropdown-item" href alp-link="./registerStandard/registerModelMsoffice.html"
+                            alp-destino=".pagina">Modelos MS Office</a>
+                        <a class="dropdown-item" href alp-link="./registerStandard/registerModelRamal.html"
+                            alp-destino=".pagina">Modelos Ramais</a>
                     </div>
                 </li>
             </ul>
@@ -53,6 +60,9 @@
             </ul>
         </div>
     </nav>
+
+    <div class="pagina"></div>
+
     <!-- Bootstrap/Jquery/Popper.js -->
     <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="../../node_modules/popper.js/dist/popper.min.js"></script>

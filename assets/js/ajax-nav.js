@@ -8,9 +8,9 @@ function navegationAjax(url, seletor) {
         })
 }
 
-document.querySelectorAll('[wm-link]').forEach(link => {
-    const url = link.attributes['wm-link'].value
-    const seletorDestino = link.attributes['wm-destino'].value
+document.querySelectorAll('[alp-link]').forEach(link => {
+    const url = link.attributes['alp-link'].value
+    const seletorDestino = link.attributes['alp-destino'].value
 
     link.onclick = e => {
         e.preventDefault()
