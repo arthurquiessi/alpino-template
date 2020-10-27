@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Modelo Máquinas - Admin</title>
+    <title>Registrar Sistema Operacional - Admin</title>
+
+    </title>
 
     <!-- BootStrap CSS-->
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap.css">
     <!-- <link rel="stylesheet" href="../../assets/css/"> -->
 </head>
 
@@ -15,7 +17,7 @@
         <div class="row">
             <div class="col">
                 <div class="py-3 text-center">
-                    <h5 class="display-5 m-2">MODELO DE MÁQUINAS</h5>
+                    <h5 class="display-5 m-2">SISTEMAS OPERACIONAIS</h5>
                 </div>
             </div>
         </div>
@@ -24,15 +26,15 @@
                 <div class="py-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Cadastrar Modelo de Máquinas</h5>
+                            <h5 class="card-title">Cadastrar Sistema Operacional</h5>
                             <div class="row">
                                 <div class="col">
                                     <form action="">
                                         <div class="form-row justify-content-center">
                                             <div class="form-group col-md-5">
-                                                <label for="inputWlan" class="pt-3">Modelo Máquina</label>
+                                                <label for="inputWlan" class="pt-3">Sistema Operacional</label>
                                                 <input type="text" class="form-control" id="inputWlan"
-                                                    placeholder="Máquina">
+                                                    placeholder="S.O.">
                                             </div>
                                         </div>
                                         <div class="pt-3">
@@ -51,10 +53,10 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="py-3">
                     <table class="table">
-                        <caption>Modelos de Máquinas Cadastrados</caption>
+                        <caption>Sistemas Operacionais Cadastrados</caption>
                         <thead>
                             <tr class="table-info">
                                 <th scope="col">#</th>
@@ -66,17 +68,26 @@
                             <tr>
                                 <th scope="row">1</th>
                                 <td>Mark</td>
-                                <td>Botão</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Edit</button>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
-                                <td>Botão</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Edit</button>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Larry</td>
-                                <td>Botão</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Edit</button>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -89,7 +100,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="Register">Modelos de Máquina</h5>
+                        <h5 class="modal-title" id="Register">Sistemas Operacionais</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -107,9 +118,9 @@
     </div>
 
     <!-- Bootstrap/Jquery/Popper.js -->
-    <script src="../../../node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="../../../node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../../../../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <!-- <script src="./assets/js/"></script> -->
 </body>
 

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Máquinas - T.I</title>
+    <title>Registrar Usuário - T.I</title>
 
     <!-- BootStrap CSS-->
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap.css">
     <!-- <link rel="stylesheet" href="../../../assets/css/"> -->
 </head>
 
@@ -23,7 +23,8 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="font-size:16px;">Home<span class="sr-only"></span></a>
+                    <a class="nav-link" href="../main.html" style="font-size:16px;">Home<span
+                            class="sr-only"></span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -31,10 +32,11 @@
                         Cadastrar
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./register/registerUser.html">Usuários</a>
-                        <a class="dropdown-item" href="./register/registerMachine.html">Máquinas</a>
-                        <a class="dropdown-item" href="#">MS Office</a>
-                        <a class="dropdown-item" href="#">Impressoras</a>
+                        <a class="dropdown-item" href="registerAll.html">Cadastro Geral</a>
+                        <a class="dropdown-item" href="registerUser.html">Usuários</a>
+                        <a class="dropdown-item" href="registerMachine.html">Máquinas</a>
+                        <a class="dropdown-item" href="registerOffice.html">MS Office</a>
+                        <a class="dropdown-item" href="registerPrinter.html">Impressoras</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -43,10 +45,8 @@
                         Consultar
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Ação</a>
-                        <a class="dropdown-item" href="#">Outra ação</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        <a class="dropdown-item" href="../consult/consultAll.html">Consulta Geral</a>
+                        <a class="dropdown-item" href="../consult/consultPrinter.html">Consultar Impressoras</a>
                     </div>
                 </li>
             </ul>
@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col">
                 <div class="py-2 text-center">
-                    <h3 class="display-3 m-2">Registro de Máquinas</h3>
+                    <h3 class="display-3 m-2">Registro de Usuário</h3>
                 </div>
             </div>
         </div>
@@ -75,52 +75,21 @@
                                 <div class="col">
                                     <form action="">
                                         <div class="form-row">
-                                            <div class="form-group col-md-3">
-                                                <label for="inputTag">Tag</label>
-                                                <select id="inputTag" class="form-control">
-                                                    <option selected>Escolher...</option>
-                                                    <option>...</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-md-5">
-                                                <label for="inputModelo">Modelo</label>
-                                                <input type="text" class="form-control" id="inputModelo">
+                                            <div class="form-group col-md-1">
+                                                <label for="inputIp">IP</label>
+                                                <input type="text" class="form-control" id="inputIp" placeholder="IP">
                                             </div>
                                             <div class="form-group col-md-4">
-                                                <label for="inputTipo">Tipo</label>
-                                                <input type="text" class="form-control" id="inputTipo">
+                                                <label for="inputUsuario">Usuário</label>
+                                                <input type="text" class="form-control" id="inputUsuario">
                                             </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-3">
-                                                <label for="inputMemoria">Memória (Ram)</label>
-                                                <input type="text" class="form-control" id="inputMemoria">
+                                            <div class="form-group col-md-4">
+                                                <label for="inputSetor">Setor</label>
+                                                <input type="text" class="form-control" id="inputSetor">
                                             </div>
                                             <div class="form-group col-md-3">
-                                                <label for="inputArmazenamento">Armazenagem</label>
-                                                <input type="text" class="form-control" id="inputArmazenamento">
-                                            </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="inputSo">Sistema Operacional</label>
-                                                <input type="text" class="form-control" id="inputSo">
-                                            </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="inputPatrimonio">Nº Patrimônio</label>
-                                                <input type="text" class="form-control" id="inputPatrimonio">
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-3">
-                                                <label for="inputCompra">Data Compra</label>
-                                                <input type="text" class="form-control" id="inputCompra">
-                                            </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="inputGarantia">Data Garantia</label>
-                                                <input type="text" class="form-control" id="inputGarantia">
-                                            </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="inputStatus">Status</label>
-                                                <input type="text" class="form-control" id="inputStatus">
+                                                <label for="inputHomeOffice">Home Office</label>
+                                                <input type="text" class="form-control" id="inputHomeOffice">
                                             </div>
                                         </div>
                                         <div class="pt-3">
@@ -144,7 +113,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="Register">Máquinas</h5>
+                        <h5 class="modal-title" id="Register">Usuário</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -161,9 +130,9 @@
         </div>
     </div>
     <!-- Bootstrap/Jquery/Popper.js -->
-    <script src="../../../node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="../../../node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../../../../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <!-- <script src="../../assets/js/"></script> -->
 </body>
 
