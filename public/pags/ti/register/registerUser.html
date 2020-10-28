@@ -33,6 +33,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="registerAll.html">Cadastro Geral</a>
+                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="registerUser.html">Usuários</a>
                         <a class="dropdown-item" href="registerMachine.html">Máquinas</a>
                         <a class="dropdown-item" href="registerOffice.html">MS Office</a>
@@ -66,30 +67,44 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
                 <div class="py-5">
                     <div class="card bg-white">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
                                     <form action="">
-                                        <div class="form-row">
+                                        <div class="form-row justify-content-center">
+                                            <div class="form-group col-md-4">
+                                                <label for="inputWlan">Wlan</label>
+                                                <input type="text" class="form-control" id="inputWlan" disabled>
+                                            </div>
                                             <div class="form-group col-md-1">
                                                 <label for="inputIp">IP</label>
                                                 <input type="text" class="form-control" id="inputIp" placeholder="IP">
                                             </div>
-                                            <div class="form-group col-md-4">
+                                            <div class="form-group col-md-6">
                                                 <label for="inputUsuario">Usuário</label>
-                                                <input type="text" class="form-control" id="inputUsuario">
+                                                <input type="text" class="form-control" id="inputUsuario"
+                                                    placeholder="Usuário">
                                             </div>
-                                            <div class="form-group col-md-4">
+                                        </div>
+                                        <div class="form-row justify-content-center">
+                                            <div class="form-group col-md-5">
                                                 <label for="inputSetor">Setor</label>
-                                                <input type="text" class="form-control" id="inputSetor">
+                                                <select class="custom-select" id="inputSetor">
+                                                    <option selected>Escolha...</option>
+                                                    <option value="">...</option>
+                                                </select>
                                             </div>
                                             <div class="form-group col-md-3">
                                                 <label for="inputHomeOffice">Home Office</label>
-                                                <input type="text" class="form-control" id="inputHomeOffice">
+                                                <select class="custom-select" id="inputHomeOffice">
+                                                    <option selected>Escolha...</option>
+                                                    <option value="sim">SIM</option>
+                                                    <option value="nao">NÃO</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="pt-3">

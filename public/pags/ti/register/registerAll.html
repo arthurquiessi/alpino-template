@@ -33,6 +33,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="registerAll.html">Cadastro Geral</a>
+                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="registerUser.html">Usuários</a>
                         <a class="dropdown-item" href="registerMachine.html">Máquinas</a>
                         <a class="dropdown-item" href="registerOffice.html">MS Office</a>
@@ -75,15 +76,21 @@
                             <div class="row">
                                 <div class="col">
                                     <form action="">
-                                        <div class="form-row">
+                                        <div class="form-row justify-content-center">
+                                            <div class="form-group col-md-3">
+                                                <label for="inputWlan">Wlan</label>
+                                                <input type="text" class="form-control" id="inputWlan" disabled>
+                                            </div>
                                             <div class="form-group col-md-1">
                                                 <label for="inputIp">IP</label>
                                                 <input type="text" class="form-control" id="inputIp" placeholder="IP">
                                             </div>
-                                            <div class="form-group col-md-4">
+                                            <div class="form-group col-md-5">
                                                 <label for="inputUsuario">Usuário</label>
                                                 <input type="text" class="form-control" id="inputUsuario" disabled>
                                             </div>
+                                        </div>
+                                        <div class="form-row justify-content-center">
                                             <div class="form-group col-md-4">
                                                 <label for="inputSetor">Setor</label>
                                                 <input type="text" class="form-control" id="inputSetor" disabled>
@@ -132,7 +139,7 @@
                                                 <input type="text" class="form-control" id="inputPatrimonio" disabled>
                                             </div>
                                         </div>
-                                        <div class="form-row">
+                                        <div class="form-row justify-content-center">
                                             <div class="form-group col-md-3">
                                                 <label for="inputCompra">Data Compra</label>
                                                 <input type="text" class="form-control" id="inputCompra" disabled>
@@ -140,10 +147,6 @@
                                             <div class="form-group col-md-3">
                                                 <label for="inputGarantia">Data Garantia</label>
                                                 <input type="text" class="form-control" id="inputGarantia" disabled>
-                                            </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="inputStatus">Status</label>
-                                                <input type="text" class="form-control" id="inputStatus" disabled>
                                             </div>
                                         </div>
                                         <div class="pt-3">
@@ -164,6 +167,27 @@
                                             <div class="form-group col-md-6">
                                                 <label for="inputSerial">Product Key do Office</label>
                                                 <input type="text" class="form-control" id="inputTipo" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="pt-3">
+                                            <h5 class="card-title">RAMAL</h5>
+                                        </div>
+                                        <div class="form-row justify-content-center">
+                                            <div class="form-group col-md-3">
+                                                <label for="inputWlan1">Wlan</label>
+                                                <input type="text" class="form-control" id="inputWlan1" disabled>
+                                            </div>
+                                            <div class="form-group col-md-1">
+                                                <label for="inputIp1">IP</label>
+                                                <input type="text" class="form-control" id="inputIp1" placeholder="IP">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputRamal">Nº Ramal</label>
+                                                <input type="text" class="form-control" id="inputRamal" disabled>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputModeloRamal">Modelo Ramal</label>
+                                                <input type="text" class="form-control" id="inputModeloRamal" disabled>
                                             </div>
                                         </div>
                                         <div class="pt-3">
