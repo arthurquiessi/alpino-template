@@ -79,10 +79,7 @@
                                         <div class="form-row">
                                             <div class="form-group col-md-3">
                                                 <label for="inputTag">Tag</label>
-                                                <select id="inputTag" class="form-control">
-                                                    <option selected>Escolher...</option>
-                                                    <option>...</option>
-                                                </select>
+                                                <input type="text" class="form-control" id="inputTag">
                                             </div>
                                             <div class="form-group col-md-5">
                                                 <label for="inputModelo">Modelo</label>
@@ -99,12 +96,19 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="form-row">
+                                        <div class="form-row justify-content-center">
                                             <div class="form-group col-md-3">
+                                                <label for="inputProcessador">Processador</label>
+                                                <select id="inputProcessador" class="form-control">
+                                                    <option selected>Escolher...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-2">
                                                 <label for="inputMemoria">Memória (Ram)</label>
                                                 <input type="text" class="form-control" id="inputMemoria">
                                             </div>
-                                            <div class="form-group col-md-3">
+                                            <div class="form-group col-md-2">
                                                 <label for="inputArmazenamento">Armazenagem</label>
                                                 <input type="text" class="form-control" id="inputArmazenamento">
                                             </div>
@@ -115,20 +119,35 @@
                                                     <option>...</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="inputPatrimonio">Nº Patrimônio</label>
-                                                <input type="text" class="form-control" id="inputPatrimonio">
-                                            </div>
                                         </div>
                                         <div class="form-row justify-content-center">
+                                            <div class="form-group col-md-3">
+                                                <label for="inputNfCompra">NF Compra</label>
+                                                <input type="text" class="form-control" id="inputNfCompra">
+                                            </div>
                                             <div class="form-group col-md-3">
                                                 <label for="inputCompra">Data Compra</label>
                                                 <input type="text" class="form-control" id="inputCompra">
                                             </div>
                                             <div class="form-group col-md-3">
+                                                <label for="inputDistribuidora">Distribuidora</label>
+                                                <select id="inputDistribuidora" class="form-control">
+                                                    <option selected>Escolher...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row justify-content-center">
+                                            <div class="form-group col-md-3">
+                                                <label for="inputNfGarantia">NF Garantia</label>
+                                                <input type="text" class="form-control" id="inputNfGarantia">
+                                            </div>
+                                            <div class="form-group col-md-3">
                                                 <label for="inputGarantia">Data Garantia</label>
                                                 <input type="text" class="form-control" id="inputGarantia">
                                             </div>
+                                        </div>
+                                        <div class="form-row justify-content-center">
                                             <div class="form-group col-md-2">
                                                 <label for="inputStatus">Status</label>
                                                 <select id="inputStatus" class="form-control">
